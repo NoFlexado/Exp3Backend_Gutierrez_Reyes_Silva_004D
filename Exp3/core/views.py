@@ -6,3 +6,6 @@ def Inicio(request):
 
 def Galeria(request):
     return render(request,'Galeria.html')
+
+def Formulario(request):
+    return render(request,'Formulario2.html')
