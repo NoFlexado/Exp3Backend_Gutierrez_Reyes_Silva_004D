@@ -1,0 +1,10 @@
+Usuario admin (base de datos):admin
+contraseña: nachojavierfer
+
+------------------------------
+SQL
+usuario sql: c##cari
+contraseña: cari
+
+------------------------
+http://127.0.0.1:8000/
