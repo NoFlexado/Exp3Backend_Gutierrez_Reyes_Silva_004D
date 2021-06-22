@@ -2,7 +2,7 @@ from django.urls import path, include, re_path
 from django.conf import settings
 from django.conf.urls.static import static
 from django.views.static import serve
-from .views import Inicio, Galeria, Formulario, Lista, form_objeto, mod_objeto
+from .views import Inicio, Galeria, Formulario, Lista, form_objeto, mod_objeto, delete_objeto
 
 urlpatterns =[
 
@@ -11,7 +11,8 @@ urlpatterns =[
     path ('Formulario', Formulario, name="Formulario"),
     path ('Lista', Lista , name="Lista"),
     path ('form_objeto', form_objeto, name='form_objeto'),
-    path ('mod_objeto/<str:pk>', mod_objeto, name="mod_objeto" )
+    path ('mod_objeto/<str:pk>', mod_objeto, name="mod_objeto" ),
+    path ('delete_objeto/<str:pk>', delete_objeto, name="delete_objeto" )
 ]
 
 

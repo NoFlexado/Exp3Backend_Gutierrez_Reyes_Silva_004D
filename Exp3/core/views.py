@@ -40,3 +40,8 @@ def mod_objeto(request, pk):
     else:
         objeto_form = ObjetoForm(instance=post)
     return render(request, 'core/mod_objeto.html', {'objeto_form': objeto_form})
+
+def delete_objeto(request, pk):
+    objeto = Donacion.objects.get(pk=pk)
+    objeto.delete()
+    return redirect('Lista')
